@@ -3,3 +3,20 @@
     margin: 0;
     padding: 0;
 }
+.footer
+{
+display: flex;
+background: rgba(51,0,255,0.753)
+;margin-top: 10px; 
+list-style: none;   
+justify-content: center;
+gap: 18px;
+flex-wrap: wrap;
+padding: 15px 0;}
+
+.logo img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+ 
