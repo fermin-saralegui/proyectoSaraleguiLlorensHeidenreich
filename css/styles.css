@@ -214,3 +214,6 @@ color: white;
 .password{
     margin-top: 10px;
 }
+.nobusqueda{
+  display: none;
+}
