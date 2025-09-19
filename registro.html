@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
     <title>Register</title>
 </head>
 <body>
@@ -28,36 +25,6 @@
             </nav>
         </section>
     </header>
-  <main class="main">
-        <section class="navmain">
-            <nav class="navmain">
-            <ul>
-                <li><a href="./category.html">Beauty</a></li>
-                <li><a href="./category.html">Fragances</a></li>
-                <li><a href="./category.html">Furniture</a></li>
-                <li><a href="./category.html">Grogeries</a></li>
-                <li><a href="./category.html">Home Decoration</a></li>
-                <li><a href="./category.html">Kithcen Accesories</a></li>
-                <li><a href="./category.html">Laptops</a></li>
-                <li><a href="./category.html">Mens Shirts</a></li>
-                <li><a href="./category.html">Mens Shoes</a></li>
-                <li><a href="./category.html">Mens Watches</a></li>
-                <li><a href="./category.html">Motorcycles</a></li>
-                <li><a href="./category.html">Skin Care</a></li>
-                <li><a href="./category.html">Smartphones</a></li>
-                <li><a href="./category.html">Sports Accesories</a></li>
-                <li><a href="./category.html">Sunglasses</a></li>
-                <li><a href="./category.html">Tablets</a></li>
-                <li><a href="./category.html">Tops</a></li>
-                <li><a href="./category.html">Vehicles</a></li>
-                <li><a href="./category.html">Women Bags</a></li>
-                <li><a href="./category.html">Women Dresses</a></li>
-                <li><a href="./category.html">Women Jewelry</a></li>
-                <li><a href="./category.html">Women Shoes</a></li>
-                <li><a href="./category.html">Women Watches</a></li>
-            </ul>
-            </nav>
-        </section>
     <main class="main">
         <section class="navmain">
             <nav class="navmain">
@@ -89,35 +56,38 @@
             </nav>
         </section>
     
-      <form action="./index.html" method="get">
-        <div>
-            <label for="Email">Email</label>
-            <input required id="Email" type="Email" name="Email" value="">
+      <form action="./index.html" method="get" class="Registro">
+        <div class="Email">
+        <label for="Email">Email</label>
+        <input required id="Email" type="email" name="Email">
+        </div>
 
+        <div class="Password">
+         <label for="Password">Password</label>
+        <input id="Password" type="password" name="Password">
         </div>
-        <div>
-            <label for="Password">Password</label>
-            <input id="Password" type="pass" name="Password" value="">
 
+        <div class="Repassword">
+        <label for="RepeatPassword">Repeat password</label>
+        <input id="RepeatPassword" type="password" name="RepeatPassword">
         </div>
+
+        <section class="terminos">
+        <label>
+      <input type="checkbox" name="Terminos" value="Aceptar">
+      Aceptar términos y condiciones
+        </label>
+        </section>
+
         <div>
-            <label for="Password">Repeat password </label>
-            <input id="Repeat password" type="pass" name="Repeat password" value="">
+        <button type="submit">Registrar</button>
         </div>
-        <section class="Terminos">
-      <div>
-        <label for="Terminos">Aceptar terminos y condiciones</label>
-      </div>
-      <div>
-        <input type="checkbox" name="Terminos" value="Aceptar">
-      </div>
-       <div>
-            <button type="submit">Registrar</button>
-        </div>
+
         <p class="sign">
-                <a href="./login.html" target="_blank">Ya tengo una cuenta</a>
-            </p>
-    </section>
+         <a href="./login.html" target="_blank">Ya tengo una cuenta</a>
+        </p>
+        </form>
+
   </main>
        <footer class="footer">
          <section class="logo">
