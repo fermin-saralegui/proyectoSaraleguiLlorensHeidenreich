@@ -37,8 +37,9 @@ border-radius: 50%;
 }
 .navegar nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     margin-left: 15px;
+    font-weight: 500px;
 }
 .login,.register {
     color: black;
@@ -81,4 +82,32 @@ font-style: normal;
 .Nombres li {
 margin: 5px 0;
 color: white;   
+}
+
+.navmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.navmain ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.navmain li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navmain li{
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 250px;
+    border: solid 1px darkblue;
+    background: rgba(51,0,255,0.753)
+
 }
