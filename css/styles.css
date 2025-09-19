@@ -3,9 +3,14 @@
     margin: 0;
     padding: 0;
 }
+body{
+  background-image: url(../img/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .footer{
 display: flex;
-background: rgba(51,0,255,0.753)
+background: rgba(51,0,255,0.653)
 ;margin-top: 10px; 
 list-style: none;   
 justify-content: center;
@@ -21,7 +26,7 @@ border-radius: 50%;
 .header{
     display: flex;
     flex-direction: row;
-    background-color: rgba(51, 0, 255, 0.753);
+    background-color: rgba(51, 0, 255, 0.653);
     padding: 15px;
     margin: 15px;
     justify-content: space-between;
@@ -54,7 +59,7 @@ border-radius: 50%;
 display: flex;
 justify-content: center; 
 align-items: center;    
-background: rgba(51,0,255,0.753);
+background: rgba(51,0,255,0.653);
 margin-top: 10px;
 padding: 15px 0;
 gap: 40px;              
@@ -95,14 +100,14 @@ color: white;
     text-decoration: none;
     font-weight: 250px;
     border: solid 1px darkblue;
-    background: rgba(51,0,255,0.753)
+    background: rgba(51,0,255,0.653)
 }
 .main{
     display: flex;
     flex-direction: row;
 }
 .Registro {
-  background: rgba(51,0,255,0.753);   
+  background: rgba(51,0,255,0.653);   
   color: white;
   padding: 30px;
   border-radius: 10px;
@@ -136,7 +141,7 @@ color: white;
 }
 .Registro button {
   background: white;
-  color: rgba(51,0,255,0.753);
+  color: rgba(51,0,255,0.653);
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
@@ -153,7 +158,7 @@ color: white;
 }
 
 .login2{
-    background: rgba(51,0,255,0.753);   
+    background: rgba(51,0,255,0.653);   
   color: white;
   padding: 30px;
   border-radius: 10%;
@@ -187,7 +192,7 @@ color: white;
 
 .login2 button{
     background: white;
-  color: rgba(51,0,255,0.753);
+  color: rgba(51,0,255,0.653);
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
