@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.footer
-{
+.footer{
 display: flex;
 background: rgba(51,0,255,0.753)
 ;margin-top: 10px; 
@@ -12,8 +11,8 @@ list-style: none;
 justify-content: center;
 gap: 18px;
 flex-wrap: wrap;
-padding: 15px 0;}
-
+padding: 15px 0;
+}
 .logo img {
 width: 150px;
 height: 150px;
@@ -26,7 +25,6 @@ border-radius: 50%;
     padding: 15px;
     margin: 15px;
     justify-content: space-between;
-
 }
 .navegar nav ul{
     display: flex;
@@ -62,42 +60,34 @@ padding: 15px 0;
 gap: 40px;              
 position: relative;
 }
-
 .logo img {
 width: 150px;
 height: 150px;
 border-radius: 50%;
 }
-
-
 .Nombres {
 list-style: none;       
 margin: 0;
 padding: 0;
 }
-
 .Nombres li {
 margin: 5px 0;
 color: white;   
 }
-
 .navmain{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 170px;
 }
-
 .navmain ul{
     list-style: none;
     padding: 10px;
 }
-
 .navmain li a{
     text-decoration: none;
     color: white;
 }
-
 .navmain li{
     color: white;
     margin-bottom: 10px;
@@ -106,7 +96,6 @@ color: white;
     font-weight: 250px;
     border: solid 1px darkblue;
     background: rgba(51,0,255,0.753)
-
 }
 .main{
     display: flex;
@@ -123,7 +112,6 @@ color: white;
   height: 450px;
   margin-left: 30%;
   margin-top: 8%;
-  
 }
 .Registro label {
   display: block;
@@ -132,7 +120,6 @@ color: white;
   justify-content: center;
   height: 20px;
 }
-
 .Email,
 .Password,
 .Repassword{
@@ -143,13 +130,10 @@ color: white;
   border-radius: 6px;
   font-size: 14px;
 }
-  
 .terminos {
   text-align: left;
   margin-bottom: 15px;
 }
-
-
 .Registro button {
   background: white;
   color: rgba(51,0,255,0.753);
@@ -159,11 +143,8 @@ color: white;
   cursor: pointer;
   font-weight: bold;
 }
-
-
 .sign {
   margin-top: 20px;
- 
 }
 .sign a{
     color: #fff;
