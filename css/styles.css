@@ -214,12 +214,34 @@ color: white;
 .nobusqueda{
   display: none;
 }
+.categories{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titulocat{
+  text-align: center;
+}
 .Productosdeportivos{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 30px;
 
+}
+.Productosdeportivos1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+}
+.results{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.resultadopelota{
+  text-align: center;
 }
 .producto{
 display: flex;
@@ -236,7 +258,13 @@ margin: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+.producto a{
+  text-decoration: none;
+  color: black;
+}
+.producto a h4{
+  text-decoration: underline;
+}
 .cincoprimaleat, .cincosegaleat, .cincoprimven, .cincosegven {
   display: flex;
   flex-wrap: row;
@@ -352,8 +380,11 @@ margin: 10px;
     margin-top: 15vh;
   }
    .Productosdeportivos1{
-    margin-left: 0;
-    margin-top: 25vh;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .headercat{
      width: 150vw;
@@ -364,6 +395,8 @@ margin: 10px;
   .headersearch{
      width: 150vw;
   }
-
+  .resultado{
+    
+  }
 
 }
