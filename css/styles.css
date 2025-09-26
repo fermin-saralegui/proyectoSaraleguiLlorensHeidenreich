@@ -308,3 +308,40 @@ margin: 10px;
   margin: 15px;
   text-align: left;
 }
+
+@media (max-width: 420px){
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+  .index{
+    width: 390vw;
+  }
+
+  .footer{
+    align-items: center;
+    text-align: center;
+  }
+  .index2{
+    width: 390vw;
+  }
+  .navegar nav ul{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .login2, .Registro{
+    margin-left: 0;
+  }
+  .productpelota{
+    margin-left: 0;
+  }
+  .indexprod{
+    width: 140vw;
+  }
+  .footprod{
+    width: 150vw;
+  }
+}
