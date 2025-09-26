@@ -268,3 +268,44 @@ margin: 10px;
   display: flex;
   flex-direction: column;
 }
+
+.productpelota{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+  margin-left: 300px;
+
+}
+.productpelota img{
+  height: 400px;
+  width: 400px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 5%;
+}
+
+.productpelota h1{
+  margin: 15px;
+}
+
+.productpelota p{
+  margin: 15px;
+}
+
+.productpelota ul{
+ list-style: none; 
+}
+
+.productpelota form{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  text-align: left;
+}
