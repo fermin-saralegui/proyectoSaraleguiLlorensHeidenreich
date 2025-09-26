@@ -110,7 +110,7 @@ color: white;
   background: rgba(51,0,255,0.653);   
   color: white;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 6%;
   width: 350px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;   
@@ -159,7 +159,7 @@ color: white;
     background: rgba(51,0,255,0.653);   
   color: white;
   padding:30px;
-  border-radius: 10%;
+  border-radius: 6%;
   width: 350px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;   
@@ -373,6 +373,32 @@ margin: 10px;
   .index{
     width: 100%;
   }
+  .prodindex{
+    width: 100%;
+  }
+  .cincoprimaleat, .cincosegaleat, .cincoprimven, .cincosegven {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px;
+  
+  }
+  .prodaleat1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prodmasvend1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   .footer{
     align-items: center;
@@ -387,7 +413,8 @@ margin: 10px;
   }
 
   .login2, .Registro{
-    margin-left: 0;
+    margin-left: 35px;
+    margin-bottom: 35px;
   }
   .productpelota{
     margin-left: 0;
