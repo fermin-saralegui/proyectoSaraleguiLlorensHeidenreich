@@ -281,6 +281,12 @@ margin: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.prodaleat h2 {
+  text-align: center;
+}
+.prodmasvend h2{
+  text-align: center;
+}
 .prodmasvend1, .prodaleat1{
   display: flex;
   flex-direction: column;
@@ -341,6 +347,23 @@ margin: 10px;
 }
 
 @media (max-width: 420px){
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navmain{
+    width: 100%;
+  }
+  .navmain ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+  }
+  .navmain li{
+    margin-right: 5px;
+  }
   .header {
     flex-direction: column;
     align-items: center;
@@ -348,7 +371,7 @@ margin: 10px;
 
   }
   .index{
-    width: 390vw;
+    width: 100%;
   }
 
   .footer{
@@ -356,7 +379,7 @@ margin: 10px;
     text-align: center;
   }
   .index2{
-    width: 390vw;
+    width: 100%;
   }
   .navegar nav ul{
     flex-direction: column;
@@ -370,34 +393,40 @@ margin: 10px;
     margin-left: 0;
   }
   .indexprod{
-    width: 140vw;
+    width: 100%;
   }
   .footprod{
-    width: 150vw;
+    width: 100%;
   }
   .footcat{
-    width: 150vw;
+    width: 100%;
   }
   .Productosdeportivos{
-    margin-left: 0;
-    margin-top: 15vh;
-  }
-   .Productosdeportivos1{
-    margin-left: 10vw;
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+   .Productosdeportivos1{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
   .headercat{
-     width: 150vw;
+     width: 100%;
+      margin: 0;
   }
   .footsearch{
-    width: 150vw;
+    width: 100%;
+    margin: 0;
   }
   .headersearch{
-     width: 150vw;
+     width: 100%;
+     margin: 0;
   }
-
-
+.resultadopelota{
+    width: 100%;
+}
 }
