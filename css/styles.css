@@ -317,6 +317,11 @@ margin: 10px;
   margin-bottom: 25px;
   border-radius: 5%;
 }
+.precio{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 
 .productpelota h1{
   margin: 15px;
@@ -395,8 +400,6 @@ margin: 10px;
   .headersearch{
      width: 150vw;
   }
-  .resultado{
-    
-  }
+
 
 }
