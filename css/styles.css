@@ -262,9 +262,7 @@ margin: 10px;
   text-decoration: none;
   color: black;
 }
-.producto a h4{
-  text-decoration: underline;
-}
+
 .cincoprimaleat, .cincosegaleat, .cincoprimven, .cincosegven {
   display: flex;
   flex-wrap: row;
