@@ -344,4 +344,26 @@ margin: 10px;
   .footprod{
     width: 150vw;
   }
+  .footcat{
+    width: 150vw;
+  }
+  .Productosdeportivos{
+    margin-left: 0;
+    margin-top: 15vh;
+  }
+   .Productosdeportivos1{
+    margin-left: 0;
+    margin-top: 25vh;
+  }
+  .headercat{
+     width: 150vw;
+  }
+  .footsearch{
+    width: 150vw;
+  }
+  .headersearch{
+     width: 150vw;
+  }
+
+
 }
