@@ -1,8 +1,8 @@
 
-let url = 'https://dummyjson.com/products';
+let url1 = 'https://dummyjson.com/products';
 let lista1 = document.querySelector(".cincoprimaleat");
 
-fetch(url)
+fetch(url1)
   .then(function(response) {
     return response.json();
   })
@@ -29,7 +29,7 @@ fetch(url)
 
   let lista2 = document.querySelector(".cincosegaleat");
 
-fetch(url)
+fetch(url1)
   .then(function(response) {
     return response.json();
   })
@@ -56,7 +56,7 @@ fetch(url)
 
   let lista3 = document.querySelector(".cincoprimven");
 
-fetch(url)
+fetch(url1)
   .then(function(response) {
     return response.json();
   })
@@ -83,7 +83,7 @@ fetch(url)
 
   let lista4 = document.querySelector(".cincosegven");
 
-fetch(url)
+fetch(url1)
   .then(function(response) {
     return response.json();
   })
@@ -101,6 +101,31 @@ fetch(url)
           <p>${productos[i].description}</p>
           <p>${productos[i].price}</p>
         </article>
+      `;
+    }
+  })
+  .catch(function(error) {
+    console.log("Error: " + error);
+  });
+
+  let url2 = 'https://dummyjson.com/products/categories';
+  let navmain1 = document.querySelector(".navmainlista");
+
+fetch(url2)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    let productos = data.products; 
+
+    console.log(productos);
+
+    for (let i=0; i<productos.length; i++) {
+      navmain1.innerHTML += `
+        <li class=" navmainjs">
+
+          ${productos[i].name}
+        </li>
       `;
     }
   })
