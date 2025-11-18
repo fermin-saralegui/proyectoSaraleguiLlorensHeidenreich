@@ -1,11 +1,6 @@
+let lista1 = document.querySelector(".diezcomidas");
 
-let url1 = 'https://dummyjson.com/products/category/fragrances';
-
-let url2 = 'https://dummyjson.com/products/category/mens-shoes';
-
-let lista1 = document.querySelector(".cincoprimaleat");
-
-fetch(url1)
+fetch(('https://dummyjson.com/products/category/groceries'))
   .then(function(response) {
     return response.json();
   })
@@ -14,9 +9,9 @@ fetch(url1)
 
     console.log(productos);
 
-    for (let i = 0; i <11; i++) {
+    for (let i = 0; i <10; i++) {
       lista1.innerHTML += `
-        <article>
+        <article class= "productoscomida">
           <img src="${productos[i].thumbnail}" alt="">
           <p>${productos[i].title}</p>
           <p>${productos[i].category}</p>
@@ -32,9 +27,9 @@ fetch(url1)
 
   
 
-  let lista2 = document.querySelector(".cincoprimven");
+  let lista2 = document.querySelector(".diezcelulares");
 
-fetch(url2)
+fetch(('https://dummyjson.com/products/category/smartphones'))
   .then(function(response) {
     return response.json();
   })
@@ -43,9 +38,9 @@ fetch(url2)
 
     console.log(productos);
 
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < 10; i++) {
       lista2.innerHTML += `
-        <article>
+        <article class= "productoscelulares">
           <img src="${productos[i].thumbnail}" alt="">
           <p>${productos[i].title}</p>
           <p>${productos[i].category}</p>

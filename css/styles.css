@@ -263,7 +263,7 @@ margin: 10px;
   color: black;
 }
 
-.cincoprimaleat, .cincosegaleat, .cincoprimven, .cincosegven {
+.diezcomidas, .diezcelulares{
   display: flex;
   flex-wrap: row;
   justify-content: space-between;
