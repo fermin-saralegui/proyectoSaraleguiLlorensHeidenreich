@@ -24,31 +24,32 @@ fetch(('https://dummyjson.com/products/category-list'))
  .catch(function(error) {
    console.log("Error: " + error)
  })
-let url3 = 'https://dummyjson.com/products/1';
-let lista3 = document.querySelector(".productodescripcion");
-
-fetch(url3)
+let contenedor = document.querySelector(".productodescripcion");
+fetch("https://dummyjson.com/products/1")
   .then(function(response) {
     return response.json();
   })
   .then(function(data) {
-    let productos = data.products; 
+    contenedor.innerHTML = `
+      <article class="productpelota">
+        <h1>${data.title}</h1>
+        <h3>${data.brand}</h3>
 
-    console.log(productos);
+        <img src="${data.thumbnail}" alt="${data.title}">
 
-    for (let i = 0; i = 1; i++) {
-      lista3.innerHTML += `
-        <article>
-          <img src="${productos[i].thumbnail}" alt="">
-          <p>${productos[i].title}</p>
-          <p>${productos[i].category}</p>
-          <p>${productos[i].description}</p>
-          <p>${productos[i].price}</p>
-          <p>${productos[i].stock}</p>
-          <p>${productos[i].rating}</p>
-        </article>
-      `;
-    }
+        <p>${data.description}</p>
+        <p>Precio: $${data.price}</p>
+        <p>Categoría: ${data.category}</p>
+        <p>Stock: ${data.stock}</p>
+
+        <h4>Tags:</h4>
+        <ul>
+          <li>${data.tags[0] || ""}</li>
+          <li>${data.tags[1] || ""}</li>
+          <li>${data.tags[2] || ""}</li>
+        </ul>
+      </article>
+    `;
   })
   .catch(function(error) {
     console.log("Error: " + error);
