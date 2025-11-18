@@ -1,7 +1,6 @@
-let url1 = "https://dummyjson.com/products/category/sports-accesories" 
-let lista1 = document.querySelector(".productosdeportivos")
+ let lista1 = document.querySelector(".menswatches")
 
-fetch(url1)
+fetch("https://dummyjson.com/products/category/mens-watches")
   .then(function(response) {
     return response.json();
   })
@@ -10,9 +9,9 @@ fetch(url1)
 
     console.log(productos);
 
-    for (let i = 0; i <productos.length; i++) {
+    for (let i = 0; i<productos.length; i++) {
       lista1.innerHTML += `
-        <article>
+        <article class="relojhombre">
           <img src="${productos[i].thumbnail}" alt="">
           <p>${productos[i].title}</p>
           <a class="verdetalle" href="./product.html">Ver detalle</a>
