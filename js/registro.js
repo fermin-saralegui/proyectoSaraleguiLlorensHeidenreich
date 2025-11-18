@@ -32,9 +32,9 @@ if (form) {
   form.addEventListener("submit", function (event) {
 
     event.preventDefault();
-    let emailInput = form.querySelector(".Email");
-    let passwordInput = form.querySelector(".Password");
-    let repeatPasswordInput = form.querySelector(".RepeatPassword");
+    let emailInput = form.querySelector("#Email");
+    let passwordInput = form.querySelector("#Password");
+    let repeatPasswordInput = form.querySelector("#RepeatPassword");
     let terminosInput = form.Terminos; 
     let email = emailInput.value;
     let password = passwordInput.value;
@@ -69,7 +69,6 @@ if (form) {
       alert("Debe aceptar los términos y condiciones.");
       return;
     }
-
     
     form.action = "./login.html";
     form.submit();
