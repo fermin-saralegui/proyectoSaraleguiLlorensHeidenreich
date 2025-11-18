@@ -1,7 +1,7 @@
 
-let url1 = 'https://dummyjson.com/products/fragances';
+let url1 = 'https://dummyjson.com/products/category/fragances';
 
-let url2 = 'https://dummyjson.com/products/sports-accesories';
+let url2 = 'https://dummyjson.com/products/category/mens-shoes';
 
 let lista1 = document.querySelector(".cincoprimaleat");
 
