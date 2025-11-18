@@ -23,7 +23,7 @@ fetch(url2)
     console.log("Error: " + error);
   });
 
-let url3 = 'https://dummyjson.com/products';
+let url3 = 'https://dummyjson.com/products/1';
 let lista3 = document.querySelector(".productodescripcion");
 
 fetch(url3)
@@ -45,7 +45,6 @@ fetch(url3)
           <p>${productos[i].price}</p>
           <p>${productos[i].stock}</p>
           <p>${productos[i].rating}</p>
-          <p>${productos[i].price}</p>
         </article>
       `;
     }
