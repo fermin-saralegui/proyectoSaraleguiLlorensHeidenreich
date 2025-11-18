@@ -371,8 +371,9 @@ margin: 10px;
   width: fit-content;
   border-radius: 10%;
   text-decoration: none;
-  
-
+}
+.logout, .saludo{
+  display: none;
 }
 
 @media (max-width: 420px){
