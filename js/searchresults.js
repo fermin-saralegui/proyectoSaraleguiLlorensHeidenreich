@@ -1,24 +1,26 @@
- let url2 = 'https://dummyjson.com/products/categories';
-  let navmain1 = document.querySelector(".navmainlista");
+let categorias = document.querySelector(".navmainlista")
+fetch(('https://dummyjson.com/products/category-list'))
 
-fetch(url2)
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    let productos = data.products; 
 
-    console.log(productos);
+ .then(function(response) {
+   return response.json()
+ })
 
-    for (let i=0; i<productos.length; i++) {
-      navmain1.innerHTML += `
-        <li class=" navmainjs">
 
-          ${productos[i].name}
-        </li>
-      `;
-    }
-  })
-  .catch(function(error) {
-    console.log("Error: " + error);
-  });
+ .then(function(data) {
+
+
+   for (let i = 0; i < data.length; i++) {
+       let categoria = data[i];
+       if (categoria){
+           categorias.innerHTML += `
+               <li class="category">
+               <a href="./category.html?category=${categoria}">${categoria}</a>
+               </li>`
+           console.log("Categorias");
+       }
+   }
+ })
+ .catch(function(error) {
+   console.log("Error: " + error)
+ })
