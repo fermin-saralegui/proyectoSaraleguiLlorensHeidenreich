@@ -263,7 +263,7 @@ margin: 10px;
   color: black;
 }
 
-.diezcomidas, .diezcelulares{
+.diezdeportes, .diezcelulares{
   display: flex;
   flex-wrap: row;
   justify-content: space-between;

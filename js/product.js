@@ -25,12 +25,14 @@ fetch(('https://dummyjson.com/products/category-list'))
    console.log("Error: " + error)
  })
 let contenedor = document.querySelector(".productodescripcion");
+
 fetch("https://dummyjson.com/products/1")
   .then(function(response) {
     return response.json();
   })
   .then(function(data) {
-    contenedor.innerHTML = `
+
+    let htmlProducto = `
       <article class="productpelota">
         <h1>${data.title}</h1>
         <h3>${data.brand}</h3>
@@ -50,7 +52,24 @@ fetch("https://dummyjson.com/products/1")
         </ul>
       </article>
     `;
+
+    let htmlReviews = "<h2>Reviews</h2>";
+
+    for (let i = 0; i < data.reviews.length; i++) {
+      htmlReviews += `
+        <article class="review">
+          <p>Rating: ${data.reviews[i].rating}</p>
+          <p>Comentario: ${data.reviews[i].comment}</p>
+          <p>Fecha:${data.reviews[i].date}</p>
+          <p>Usuario: ${data.reviews[i].reviewerName}</p>
+        </article>
+      `;
+    }
+
+    contenedor.innerHTML = htmlProducto + htmlReviews;
+
   })
   .catch(function(error) {
     console.log("Error: " + error);
   });
+ 

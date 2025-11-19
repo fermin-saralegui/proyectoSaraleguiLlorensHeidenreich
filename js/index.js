@@ -1,6 +1,6 @@
-let lista1 = document.querySelector(".diezcomidas");
+let lista1 = document.querySelector(".diezdeportes");
 
-fetch(('https://dummyjson.com/products/category/groceries'))
+fetch(('https://dummyjson.com/products/category/sports-accessories'))
   .then(function(response) {
     return response.json();
   })
@@ -11,7 +11,7 @@ fetch(('https://dummyjson.com/products/category/groceries'))
 
     for (let i = 0; i <10; i++) {
       lista1.innerHTML += `
-        <article class= "productoscomida">
+        <article class= "productosdeportivos">
           <img src="${productos[i].thumbnail}" alt="">
           <p>${productos[i].title}</p>
           <p>${productos[i].category}</p>
