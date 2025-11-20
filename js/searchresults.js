@@ -46,8 +46,9 @@ fetch('https://dummyjson.com/products/search?q=' + searchValores)
         if (productos.length === 0) {
             noBuscar.innerText = "No hay resultados para: " + searchValores
             valoresCaja.innerHTML = ""
+            valoresCaja.style.display = "none"
         }
-
+        
         for (let i = 0; i < productos.length; i++) {
                 let p = productos[i]
     

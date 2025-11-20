@@ -212,9 +212,6 @@ color: white;
 .password{
     margin-top: 10px;
 }
-.nobusqueda{
-  display: none;
-}
 
 .titulocat{
   text-align: center;
@@ -282,12 +279,31 @@ height: 300px;
   justify-content: center;
   align-items: center;
 }
-
+.Productosdeportivos1{
+    display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 10px;
+  height: 500px;
+  width: 300px;;
+  justify-content: center;
+  align-items: center;
+}
 .producto a{
   text-decoration: none;
   color: black;
 }
-
+.nobusqueda{
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  background: whitesmoke;
+  border-radius: 12px;
+  padding: 15px;
+}
 .diezdeportes, .diezcelulares{
   display: flex;
   flex-wrap: wrap;
