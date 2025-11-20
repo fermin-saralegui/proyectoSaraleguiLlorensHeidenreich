@@ -305,7 +305,7 @@ height: 300px;
   flex-direction: column;
 }
 
-.productpelota{
+.productodescripcion{
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
@@ -317,15 +317,32 @@ height: 300px;
   text-align: center;
   width: 700px;
   margin-left: 300px;
+  height: fit-content;
 
 }
-.productpelota img{
-  height: 400px;
-  width: 400px;
+.productodescripcion img{
+  height: 300px;
+  width: 300px;
   margin-top: 25px;
   margin-bottom: 25px;
   border-radius: 5%;
 }
+
+.opiniones{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  margin-left: 150px;
+  height: fit-content;
+}
+
 .precio{
   margin-top: 10px;
   margin-bottom: 10px;

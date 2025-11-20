@@ -26,7 +26,7 @@ fetch(('https://dummyjson.com/products/category-list'))
  })
 
 let contenedorproducto = document.querySelector(".productodescripcion");
-let contenedorreview = document.querySelector(".reviews")
+let contenedorreview = document.querySelector(".opiniones")
 let queryString = location.search;              
 let params = new URLSearchParams(queryString);  
 let id = params.get('id');
@@ -36,17 +36,17 @@ fetch("https://dummyjson.com/products/" + id)
         return res.json();
     })
     .then(function(data) {
-        contenedorproducto.innerHTML =
-            `<img src= "${data.images[0]}" alt= "${data.titles}"}>
-            <div class="detalles">
+        contenedorproducto.innerHTML = `
+           <div class="detalles" >
                 <h2>${data.title} </h2>
-                <p>${data.brand} </p>
-                <p>${data.description} </p>
-                <p>$${data.price} </p>
-                <p>${data.category} </p>
+                <img src= "${data.images[0]}" alt= "${data.titles}"}>
+                <p>Marca:${data.brand} </p>
+                <p>Descripcion:${data.description} </p>
+                <p>Precio:$${data.price} </p>
+                <p>Categoria:${data.category} </p>
                 <p>Stock:${data.stock} </p>
                 <p>Tags:${data.tags} </p>
-            </div>`;
+            </div>`;
 
             let reviews = data.reviews;
             let htmlReviews = "<h2>Reseñas</h2>"
