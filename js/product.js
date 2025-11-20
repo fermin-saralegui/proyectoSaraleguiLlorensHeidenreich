@@ -39,13 +39,13 @@ fetch("https://dummyjson.com/products/" + id)
         contenedorproducto.innerHTML =
             `<img src= "${data.images[0]}" alt= "${data.titles}"}>
             <div class="detalles">
-                <h2>Nombre del Producto: ${data.title} </h2>
-                <p>Marca: ${data.brand} </p>
-                <p>Descripcion: ${data.description} </p>
-                <p>Precio: $${data.price} </p>
-                <p>Categoría: ${data.category} </p>
-                <p>Stock: ${data.stock} </p>
-                <p>Tags: ${data.tags} </p>
+                <h2>${data.title} </h2>
+                <p>${data.brand} </p>
+                <p>${data.description} </p>
+                <p>$${data.price} </p>
+                <p>${data.category} </p>
+                <p>Stock:${data.stock} </p>
+                <p>Tags:${data.tags} </p>
             </div>`;
 
             let reviews = data.reviews;

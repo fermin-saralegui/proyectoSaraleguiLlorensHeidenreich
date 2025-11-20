@@ -35,8 +35,5 @@ if (logoutBoton) {
       logoutItem.style.display = "none";
     }
 
-    
-    logoutBoton.action = "./index.html";
-    logoutBoton.click();
   });
 }
