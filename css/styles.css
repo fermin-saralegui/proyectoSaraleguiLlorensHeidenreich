@@ -215,11 +215,7 @@ color: white;
 .nobusqueda{
   display: none;
 }
-.categories{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .titulocat{
   text-align: center;
 }
@@ -263,6 +259,29 @@ height: 300px;
   margin-bottom: 20px;
 } 
 
+.categories{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todosproductos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.art{
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 10px;
+  height: 500px;
+  width: 300px;;
+  justify-content: center;
+  align-items: center;
+}
 
 .producto a{
   text-decoration: none;
