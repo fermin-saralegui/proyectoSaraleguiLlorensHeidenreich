@@ -24,52 +24,47 @@ fetch(('https://dummyjson.com/products/category-list'))
  .catch(function(error) {
    console.log("Error: " + error)
  })
-let contenedor = document.querySelector(".productodescripcion");
 
-fetch("https://dummyjson.com/products/1")
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
+let contenedorproducto = document.querySelector(".productodescripcion");
+let contenedorreview = document.querySelector(".reviews")
+let queryString = location.search;              
+let params = new URLSearchParams(queryString);  
+let id = params.get('id');
 
-    let htmlProducto = `
-      <article class="productpelota">
-        <h1>${data.title}</h1>
-        <h3>${data.brand}</h3>
+fetch("https://dummyjson.com/products/" + id)
+    .then(function(res) {
+        return res.json();
+    })
+    .then(function(data) {
+        contenedorproducto.innerHTML =
+            `<img src= "${data.images[0]}" alt= "${data.titles}"}>
+            <div class="detalles">
+                <h2>Nombre del Producto: ${data.title} </h2>
+                <p>Marca: ${data.brand} </p>
+                <p>Descripcion: ${data.description} </p>
+                <p>Precio: $${data.price} </p>
+                <p>Categoría: ${data.category} </p>
+                <p>Stock: ${data.stock} </p>
+                <p>Tags: ${data.tags} </p>
+            </div>`;
 
-        <img src="${data.thumbnail}" alt="${data.title}">
+            let reviews = data.reviews;
+            let htmlReviews = "<h2>Reseñas</h2>"
 
-        <p>${data.description}</p>
-        <p>Precio: $${data.price}</p>
-        <p>Categoría: ${data.category}</p>
-        <p>Stock: ${data.stock}</p>
+            for (let i = 0; i < reviews.length; i++) {
+                let review = reviews[i];
+                htmlReviews += `
+                    <article class= "reviews"
+                    <h3> Rating: ${review.rating}/5</h3>
+                    <p>${review.comment}</p>
+                    <p>Fecha: ${review.date}</p>
+                    <p>Usuario: ${review.reviewerName}</p>
+                    </article>`;
+            }
+            contenedorreview.innerHTML = htmlReviews
+    })
+    .catch(function(err){
+        console.log("Error: " + err);
+    });
 
-        <h4>Tags:</h4>
-        <ul>
-          <li>${data.tags[0] || ""}</li>
-          <li>${data.tags[1] || ""}</li>
-          <li>${data.tags[2] || ""}</li>
-        </ul>
-      </article>
-    `;
-
-    let htmlReviews = "<h2>Reviews</h2>";
-
-    for (let i = 0; i < data.reviews.length; i++) {
-      htmlReviews += `
-        <article class="review">
-          <p>Rating: ${data.reviews[i].rating}</p>
-          <p>Comentario: ${data.reviews[i].comment}</p>
-          <p>Fecha:${data.reviews[i].date}</p>
-          <p>Usuario: ${data.reviews[i].reviewerName}</p>
-        </article>
-      `;
-    }
-
-    contenedor.innerHTML = htmlProducto + htmlReviews;
-
-  })
-  .catch(function(error) {
-    console.log("Error: " + error);
-  });
  

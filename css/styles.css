@@ -243,7 +243,7 @@ color: white;
 .resultadopelota{
   text-align: center;
 }
-.producto{
+.productosdeportivos, .productoscelulares {
 display: flex;
 flex-direction: column;
 background: whitesmoke;

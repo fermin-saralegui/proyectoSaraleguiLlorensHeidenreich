@@ -1,28 +1,55 @@
- let lista1 = document.querySelector(".menswatches")
+window.addEventListener('load', function () {
 
-fetch("https://dummyjson.com/products/category/mens-watches")
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    let productos = data.products; 
+    let queryString = location.search;
+    let params = new URLSearchParams(queryString);
+    let categoryName = params.get('category'); 
 
-    console.log(productos);
 
-    for (let i = 0; i<productos.length; i++) {
-      lista1.innerHTML += `
-        <article class="relojhombre">
-          <img src="${productos[i].thumbnail}" alt="">
-          <p>${productos[i].title}</p>
-          <a class="verdetalle" href="./product.html">Ver detalle</a>
-        </article>
-      `;
-    }
-  })
-  .catch(function(error) {
-    console.log("Error: " + error);
-  });
 
+    let tituloCategoria = document.querySelector('.productosgenerales');
+    let contenedorcartas = document.querySelector('.todosproductos');
+
+
+
+    tituloCategoria.innerText = categoryName;
+
+
+    let url = 'https://dummyjson.com/products/category/' + categoryName;
+
+    contenedorcartas.innerHTML = "<p>Cargando productos...</p>";
+
+    fetch(url)
+        .then(function (respuesta) {
+            return respuesta.json();
+        })
+        .then(function (data) {
+            let productos = data.products;
+            let contenido = "";
+
+            for (let i = 0; i < productos.length; i++) {
+                let p = productos[i];
+
+                contenido += `
+                    <article class="art">
+                        <img class="imgart" src="${p.thumbnail}" alt="${p.title}">
+                        <h2>${p.title}</h2>
+                        <p>${p.description}</p>
+                        <p>$${p.price}</p>
+                        <button class="vermas">
+                            <a href="./product.html?id=${p.id}" target="_blank">Ver Más</a>
+                        </button>
+                    </article>
+                `;
+            }
+
+            contenedorcartas.innerHTML = contenido;
+        })
+        .catch(function (error) {
+            contenedorcartas.innerHTML = "<p>Error al cargar productos.</p>";
+            console.log("Error: ", error);
+        });
+
+});
   
 let categorias = document.querySelector(".navmainlista")
 fetch(('https://dummyjson.com/products/category-list'))
