@@ -51,7 +51,6 @@ fetch('https://dummyjson.com/products/search?q=' + searchValores)
         
         for (let i = 0; i < productos.length; i++) {
                 let p = productos[i]
-    
                 contenido += `
                     <article class="art">
                         <img class="imgart" src="${p.thumbnail}" alt="${p.title}">
