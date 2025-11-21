@@ -108,8 +108,8 @@ color: white;
     flex-direction: row;
 }
 .Registro {
-  background: rgba(51,0,255,0.653);   
-  color: white;
+  background: whitesmoke;   
+  color: black;
   padding: 30px;
   border-radius: 6%;
   width: 350px;
@@ -139,10 +139,16 @@ color: white;
 .terminos {
   text-align: left;
   margin-bottom: 15px;
+  color: black;
 }
+
+.terminos{
+  color: black;
+}
+
 .Registro button {
-  background: white;
-  color: rgba(51,0,255,0.653);
+  background: rgba(51,0,255,0.653);
+  color: whitesmoke;
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
@@ -151,14 +157,14 @@ color: white;
   margin-top: 20px;
 }
 .sign a{
-    color: #fff;
+  color: #fff;
   text-decoration: underline;
   font-size: 14px;
 }
 
 .login2{
-    background: rgba(51,0,255,0.653);   
-  color: white;
+  background: whitesmoke;   
+  color: black;
   padding:30px;
   border-radius: 6%;
   width: 350px;
@@ -168,11 +174,10 @@ color: white;
   margin-left: 30%;
   margin-top: 8%;
   
-  
 }
 
 .email2{
-    width: 100%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: none;
@@ -182,7 +187,7 @@ color: white;
 }
 
 .login2 label{
-    display: block;
+  display: block;
   margin-bottom: 6px;
   text-align: left;
   justify-content: center;
@@ -190,8 +195,8 @@ color: white;
 }
 
 .login2 button{
-    background: white;
-  color: rgba(51,0,255,0.653);
+  background: rgba(51,0,255,0.653);
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
@@ -249,12 +254,29 @@ width: 300px;;
 justify-content: center;
 align-items: center;
 }
+
 .productosdeportivos img, .productoscelulares img{
 height: 300px;
   width: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
 } 
+
+.productosdeportivos a, .productoscelulares a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  border-radius: 10%;
+  margin-top: 10px;
+  background-color: rgba(51, 0, 255, 0.205);
+}
+
+.productosdeportivos p, .productoscelulares p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
 
 .categories{
   display: flex;
@@ -274,11 +296,32 @@ height: 300px;
   border-radius: 12px;
   padding: 25px;
   margin: 10px;
-  height: 500px;
+  height: fit-content;
   width: 300px;;
   justify-content: center;
   align-items: center;
 }
+
+.art a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.art button{
+  padding: 5px;
+  border-radius: 10%;
+  margin-top: 10px;
+  background-color: rgba(51, 0, 255, 0.205);
+  border: none;
+}
+
+.art p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 .Productosdeportivos1{
     display: flex;
   flex-direction: column;

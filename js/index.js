@@ -17,8 +17,7 @@ fetch(('https://dummyjson.com/products/category/sports-accessories'))
           <p>${productos[i].category}</p>
           <p>${productos[i].description}</p>
           <p>${productos[i].price}</p>
-          <a href="./product.html?id=${productos[i].id}" target="_blank">Ver Más</a>
-                        </button>
+          <a href="./product.html?id=${productos[i].id}" target="_blank">Ver Más</a></button>
         </article>
       `;
     }
