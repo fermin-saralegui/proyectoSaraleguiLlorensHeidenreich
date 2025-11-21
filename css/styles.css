@@ -55,6 +55,18 @@ border-radius: 50%;
     flex-direction: column;
     justify-content: center;
 }
+.saludo{
+  color: white;
+}
+.productosgenerales{
+  display: flex;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 50px;
+  margin-left: 10px;
+}
 .footer {
 display: flex;
 justify-content: center; 
@@ -342,6 +354,7 @@ height: 300px;
   background: whitesmoke;
   border-radius: 12px;
   padding: 15px;
+  width: fit-content;
 }
 .diezdeportes, .diezcelulares{
   display: flex;
@@ -361,7 +374,15 @@ height: 300px;
   margin-bottom: 20px;
 }
 .prodaleat h2 {
+  display: flex;
   text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 50px;
+  margin-left: 10px;
+  width: fit-content;
+  margin-left: 30px;
 }
 .prodmasvend h2{
   text-align: center;
